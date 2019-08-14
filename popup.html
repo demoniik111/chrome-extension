@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Yandex Music extension</title>
+    <!--ссылаемся на шрифты, используемые в документе-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <!--здесь мы ссылаемся на стили, которые будем использовать в документе, а именно стиль иконок-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+     crossorigin="anonymous">
+     <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!--контейнер, содержащий название, логотип и номер версии-->
+  <div class="modal-header">
+    <h1 class="logo">
+      <img class="logo-icon" src="images/www.png"> Yandex Music Styler
+      <span class="version">(1.0.0)</span>
+   </h1>
+  </div>
+  <!--Конец контейнера-->
+
+  <!--контейнер, содержащий описание функций расширения-->
+  <div class="modal-content">
+    <p>Стилизация страницы Яндекс Музыки</p>
+
+    <!--контейнер с инпутом-->
+    <div class="q-container">
+        <div class="main">
+        <input type="checkbox" id="hidcheck" hidden>
+        <label class="capsule" for="hidcheck" id="capsule-id">
+            <div class="circle"></div>
+            <div class="text-signs">
+            <span id="on"></span>
+            </div>
+        </label>
+        </div>
+    </div>
+    <!--Конец контейнера-->
+
+  </div>
+  <!--Конец контейнера-->
+</body>
+</html>
