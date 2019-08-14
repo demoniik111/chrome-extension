@@ -3,10 +3,22 @@
 	"name": "Chrome-extension",
 	"description": "Расширение для стилизации яндекс музыки",
 	"version": "1.0.0",
-	"icons": {"128": "icon_128.png"},
+    "icons": {"128": "icon_128.png"},
+    "content_scripts": [
+        {
+            "matches": [ "*://*/*" ],
+            "js": [ "popup.js" ]
+        }
+    ],
+    "background": {
+        "scripts": ["popup.js"]
+    },
 	"browser_action": {
 		"default_icon": "icon.png",
 		"default_popup": "popup.html"
 	},
-	"permissions": ["activeTab"]
+	"permissions": [
+        "activeTab",
+        "tabs"
+    ]
 }
